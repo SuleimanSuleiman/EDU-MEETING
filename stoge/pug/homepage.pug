@@ -8,4 +8,190 @@ html(lang="en")
         include include/links.pug
         include include/scripts.pug
     body
-    
+        .container 
+            .header 
+                .logo
+                    img(src="/img/logo.png", alt="")
+                ul.list-unstyled
+                    li
+                        a(href="#home" class= 'active ') HOME 
+                    li
+                        a(href="#about") ABOUT
+                    li
+                        a(href="#services") SERVICESS 
+                    li
+                        a(href="#portfolio") PORTFOLIO 
+                    li
+                        a(href="#pages") PAGES
+                    li
+                        a(href="#blog") BLOG 
+                    li
+                        a(href="#contect") CONTECT
+            .row.sul
+                .col-lg-12(class="d-flex")
+                    .col-lg-6
+                        .text 
+                            h3 Hey 
+                                span suleiman
+                            h2 
+                                |I AM AKSHAY
+                            p 
+                                |SENIOR WORDPRESS DEVELOPER
+                        .buttons 
+                            button(class="btn a") 
+                                |HIRE ME
+                            button(class="btn b")
+                                |GET CV 
+                    .col-lg-6
+                        img(src="/img/banner/banner-image.png",class="img-fluid",alt="")
+            .row.about
+                .col-lg-6 
+                    img(src="/img/about-us.png",class = 'img-fluid', alt="")
+                .col-lg-6 
+                    .text 
+                        h1 LET MEINTRODUCE MYSELF
+                        p
+                            |Lorem ipsum dolor sit amet consectetur adipisicing elit. Error rerum iure obcaecati vel possimus officia maiores perferendis ut! Quos, perspiciatis.
+                            |It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here
+                    .button 
+                        button(class="btn a") 
+                                |Download CV
+            .row.about2 
+                .col-lg-6
+                    .boxs 
+                        .box 
+                            img(src="/img/brands/logo1.png", alt="")
+                        .box 
+                            img(src="/img/brands/logo2.png", alt="")
+                        .box 
+                            img(src="/img/brands/logo3.png", alt="")
+                        .box 
+                            img(src="/img/brands/logo4.png", alt="")
+                        .box 
+                            img(src="/img/brands/logo5.png", alt="")
+                        .box 
+                            img(src="/img/brands/logo6.png", alt="")
+                        .box 
+                            img(src="/img/brands/logo7.png", alt="")
+                        .box 
+                            img(src="/img/brands/logo8.png", alt="")
+                        .box 
+                            img(src="/img/brands/logo9.png", alt="")
+                .col-lg-4 
+                    .part.a 
+                        .text
+                            span 10
+                            p Years Experience Working
+                        img(src="/img/client-info-bg.png", class ='img-fluid',alt="")
+                    .part.b
+                        .icons 
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M511.2 387l-23.25 100.8c-3.266 14.25-15.79 24.22-30.46 24.22C205.2 512 0 306.8 0 54.5c0-14.66 9.969-27.2 24.22-30.45l100.8-23.25C139.7-2.602 154.7 5.018 160.8 18.92l46.52 108.5c5.438 12.78 1.77 27.67-8.98 36.45L144.5 207.1c33.98 69.22 90.26 125.5 159.5 159.5l44.08-53.8c8.688-10.78 23.69-14.51 36.47-8.975l108.5 46.51C506.1 357.2 514.6 372.4 511.2 387z"/></svg>
+                        .text 
+                            span: a(href="#")  CALL NOW 
+                            span (+91)-800-555-4986
+            .services#services
+                .text-heading 
+                    h3 SERVICES OFFERS
+                    p There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour
+                .row
+                    .col-md-4.col-sm-6 
+                        img(src="/img/services/s1.png",class="img-fluid", alt="")
+                        .text 
+                            h4 WP DEVELOPER
+                            p quick example text to build on the card title and make up the bulk of the card's content.
+                    .col-md-4.col-sm-6 
+                        img(src="/img/services/s2.png", alt="")
+                        .text 
+                            h4 UX/UI DESING
+                            p Some quick example text to build on the card title and make up the bulk of the card's content.
+                    .col-md-4.col-sm-6 
+                        img(src="/img/services/s3.png", alt="")
+                        .text 
+                            h4 WEB DESIGN
+                            p Some quick example text to build on the card title and make up the bulk of the card's content.
+                    .col-md-4.col-sm-6 
+                        img(src="/img/services/s4.png", alt="")
+                        .text 
+                            h4 SEO OPTIMIZE
+                            p Some quick example text to build on the card title and make up the bulk of the card's content.
+            .portfolio#portfolio
+                h3 RECENTLY DONE PROJECT QUALITY WORK
+                ul.links.list-unstyled
+                    li(class = 'active' , data-cut = 'all') ALL
+                    li( data-cut = 'popular') POPULAR
+                    li( data-cut = 'latest') LATEST
+                    li(data-cut = 'following') FOLLOWING
+                    li( data-cut = 'upcoming') UPCOMING
+                .row.images 
+                    .col-lg-4.col-sm-6.cart(class = 'all latest open')
+                        .box
+                            img(src="/img/portfolio/p1.jpg", class ='img-fluid',alt="")
+                            .text 
+                                h3 MINIMUL DESING
+                                p Latest, Portfolio
+                    .col-lg-4.col-sm-6.cart(class = 'all popular open')  
+                        .box
+                            img(src="/img/portfolio/p2.jpg", class ='img-fluid',alt="")
+                            .text 
+                                h3 PAINT WALL
+                                p Popular, Portfolio
+                    .col-lg-4.col-sm-6.cart(class = 'all Popular open')  
+                        .box
+                            img(src="/img/portfolio/p3.jpg", class ='img-fluid',alt="")
+                            .text 
+                                h3 FEMALE LIGHT
+                                p Popular, Portfolio
+                    .col-lg-4.col-sm-6.cart(class = 'all upcoming open')  
+                        .box
+                            img(src="/img/portfolio/p4.jpg", class ='img-fluid',alt="")
+                            .text 
+                                h3 FOURTH AIR
+                                p Upcoming, Portfolio
+                    .col-lg-4.col-sm-6.cart(class = 'all following open')  
+                        .box
+                            img(src="/img/portfolio/p6.jpg", class ='img-fluid',alt="")
+                            .text 
+                                h3 TOGETHER SIGN
+                                p Following, Portfolio
+                    .col-lg-4.col-sm-6.cart(class = 'all upcoming open')  
+                        .box
+                            img(src="/img/portfolio/p5.jpg", class ='img-fluid',alt="")
+                            .text 
+                                h3 MULIPLE FOWN
+                                p Upcoming, Portfolio
+                    .col-lg-4.col-sm-6.cart(class = 'all following open')
+                        .box
+                            img(src="/img/portfolio/p7.jpg", class ='img-fluid',alt="")
+                            .text 
+                                h3 GREEN HEAVEN
+                                p Following, Portfolio
+                    .col-lg-4.col-sm-6.cart(class = 'all upcoming open')  
+                        .box
+                            img(src="/img/portfolio/p9.jpg", class ='img-fluid',alt="")
+                            .text 
+                                h3 CAMERA LENS
+                                p Upcoming, Portfolio
+                    .col-lg-4.col-sm-6.cart(class = 'all following open')  
+                        .box
+                            img(src="/img/portfolio/p8.jpg", class ='img-fluid',alt="")
+                            .text 
+                                h3 FLY MALE
+                                p Following, Portfolio
+            .contact#contect 
+                .container 
+                    h3 GET UPDATE FROM ANYWHERE
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, consequuntur.
+                    form(action="" method='post')
+                        input(type="email", name="emailUser" placeholder="Email") 
+                        button(type= 'submit' class='btn btn-main')     Subscrib
+            footer 
+                .container 
+                    img(src="/img/logo.png",class = 'img-fluid', alt="")
+                    h3 FOLLOW ME
+                    UL.list-unstyled 
+                        li <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
+                        li <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg>
+                        li <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
+                        li <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg>
+                    p(class='text-muted') Copyright ©2019 All rights reserved | This template is made with by  
+                        a(href="#")   Daily Tuition 

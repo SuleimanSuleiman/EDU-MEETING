@@ -1,0 +1,51 @@
+@import '../helper/variable';
+
+.header{
+    z-index: 1000000;
+    width: 93%;
+    background: #fff;
+    margin-top: 0;
+    padding: 31px;
+    box-shadow: 3px 3px 3px #e0e0e9;
+    top: 0;
+    left: 50%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    opacity: .9;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    .logo{
+        flex-basis: 30%;
+        align-items: center;
+        img{
+            margin-top: -12px;
+        }
+    }
+    ul{
+        display: flex;
+        justify-content: space-between;
+        flex-basis: 70%;
+        align-items: center;
+        margin-bottom: 0;
+        li{
+            &:hover{
+                a{
+                    color: $hover-text;
+                }
+            }
+            a{
+                text-decoration: none;
+                color: $title-color;
+                &.active{
+                    color: $hover-text;
+                }
+            }
+        }
+    }
+}

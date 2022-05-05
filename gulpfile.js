@@ -23,7 +23,7 @@ gulp.task('css' , function(){
     .pipe(sourcemaps.init())
     .pipe(sass({outputStyle: 'compressed'}))
     .pipe(prefix())
-    .pipe(concat('./dist/css'))
+    .pipe(concat('style.css'))
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('dist/css'))
     .pipe(livereload())
